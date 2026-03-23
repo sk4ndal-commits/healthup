@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_app/features/profile/domain/user_profile.dart';
 import 'package:mobile_app/features/profile/presentation/profile_notifier.dart';
+import 'package:mobile_app/features/plan/presentation/plan_notifier.dart';
 import 'package:mobile_app/l10n/app_localizations.dart';
 
 class CreateProfilePage extends ConsumerStatefulWidget {
@@ -91,7 +92,10 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
         );
 
     if (mounted) {
-      context.go('/');
+      await ref.read(planNotifierProvider.notifier).generateInitialPlan();
+      if (mounted) {
+        context.go('/profile/plan-confirmation');
+      }
     }
   }
 

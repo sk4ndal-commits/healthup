@@ -10,15 +10,15 @@ class _$ForgotPasswordRequest extends ForgotPasswordRequest {
   @override
   final String? email;
 
-  factory _$ForgotPasswordRequest([
-    void Function(ForgotPasswordRequestBuilder)? updates,
-  ]) => (ForgotPasswordRequestBuilder()..update(updates))._build();
+  factory _$ForgotPasswordRequest(
+          [void Function(ForgotPasswordRequestBuilder)? updates]) =>
+      (ForgotPasswordRequestBuilder()..update(updates))._build();
 
   _$ForgotPasswordRequest._({this.email}) : super._();
   @override
   ForgotPasswordRequest rebuild(
-    void Function(ForgotPasswordRequestBuilder) updates,
-  ) => (toBuilder()..update(updates)).build();
+          void Function(ForgotPasswordRequestBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   ForgotPasswordRequestBuilder toBuilder() =>
@@ -40,9 +40,9 @@ class _$ForgotPasswordRequest extends ForgotPasswordRequest {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-      r'ForgotPasswordRequest',
-    )..add('email', email)).toString();
+    return (newBuiltValueToStringHelper(r'ForgotPasswordRequest')
+          ..add('email', email))
+        .toString();
   }
 }
 
@@ -81,7 +81,10 @@ class ForgotPasswordRequestBuilder
   ForgotPasswordRequest build() => _build();
 
   _$ForgotPasswordRequest _build() {
-    final _$result = _$v ?? _$ForgotPasswordRequest._(email: email);
+    final _$result = _$v ??
+        _$ForgotPasswordRequest._(
+          email: email,
+        );
     replace(_$result);
     return _$result;
   }

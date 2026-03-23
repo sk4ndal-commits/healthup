@@ -8,6 +8,8 @@ import 'package:mobile_app/features/home/presentation/home_page.dart';
 import 'package:mobile_app/features/profile/presentation/pages/create_profile_page.dart';
 import 'package:mobile_app/features/profile/presentation/pages/profile_page.dart';
 import 'package:mobile_app/features/profile/presentation/profile_notifier.dart';
+import 'package:mobile_app/features/plan/presentation/plan_notifier.dart';
+import 'package:mobile_app/features/plan/presentation/pages/plan_confirmation_page.dart';
 
 part 'router.g.dart';
 
@@ -15,6 +17,7 @@ part 'router.g.dart';
 GoRouter router(RouterRef ref) {
   final authState = ref.watch(authNotifierProvider);
   final profileState = ref.watch(profileNotifierProvider);
+  final planState = ref.watch(planNotifierProvider);
 
   return GoRouter(
     initialLocation: '/',
@@ -37,6 +40,13 @@ GoRouter router(RouterRef ref) {
       final isCreatingProfile = state.matchedLocation == '/profile/create';
       if (!isCreatingProfile && profileState.hasValue && profileState.value == null) {
         return '/profile/create';
+      }
+
+      // If profile exists but no plan, redirect to confirmation (which should generate it)
+      // US-F2.1 Acceptance Criteria: Every onboarded user gets a generated weekly plan.
+      final isPlanConfirmation = state.matchedLocation == '/profile/plan-confirmation';
+      if (profileState.value != null && planState.hasValue && planState.value == null && !isPlanConfirmation && !isCreatingProfile) {
+        return '/profile/plan-confirmation';
       }
 
       return null;
@@ -65,6 +75,10 @@ GoRouter router(RouterRef ref) {
       GoRoute(
         path: '/profile/create',
         builder: (context, state) => const CreateProfilePage(),
+      ),
+      GoRoute(
+        path: '/profile/plan-confirmation',
+        builder: (context, state) => const PlanConfirmationPage(),
       ),
     ],
   );

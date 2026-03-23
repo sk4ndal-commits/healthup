@@ -107,7 +107,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **apiV1AuthLoginPost**
-> apiV1AuthLoginPost(loginRequest)
+> LoginResponse apiV1AuthLoginPost(loginRequest)
 
 
 
@@ -123,7 +123,8 @@ final api = ApiClient().getAuthApi();
 final LoginRequest loginRequest = ; // LoginRequest | 
 
 try {
-    api.apiV1AuthLoginPost(loginRequest);
+    final response = api.apiV1AuthLoginPost(loginRequest);
+    print(response);
 } catch on DioException (e) {
     print('Exception when calling AuthApi->apiV1AuthLoginPost: $e\n');
 }
@@ -137,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -146,7 +147,7 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/*+json
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -195,7 +196,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **apiV1AuthRefreshPost**
-> apiV1AuthRefreshPost(refreshRequest)
+> LoginResponse apiV1AuthRefreshPost(refreshRequest)
 
 
 
@@ -211,7 +212,8 @@ final api = ApiClient().getAuthApi();
 final RefreshRequest refreshRequest = ; // RefreshRequest | 
 
 try {
-    api.apiV1AuthRefreshPost(refreshRequest);
+    final response = api.apiV1AuthRefreshPost(refreshRequest);
+    print(response);
 } catch on DioException (e) {
     print('Exception when calling AuthApi->apiV1AuthRefreshPost: $e\n');
 }
@@ -225,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -234,7 +236,7 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/*+json
- - **Accept**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

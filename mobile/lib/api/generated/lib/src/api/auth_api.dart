@@ -11,6 +11,7 @@ import 'package:dio/dio.dart';
 import 'package:api_client/src/model/change_password_request.dart';
 import 'package:api_client/src/model/forgot_password_request.dart';
 import 'package:api_client/src/model/login_request.dart';
+import 'package:api_client/src/model/login_response.dart';
 import 'package:api_client/src/model/refresh_request.dart';
 import 'package:api_client/src/model/register_request.dart';
 import 'package:api_client/src/model/reset_password_request.dart';
@@ -184,9 +185,9 @@ class AuthApi {
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future]
+  /// Returns a [Future] containing a [Response] with a [LoginResponse] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> apiV1AuthLoginPost({
+  Future<Response<LoginResponse>> apiV1AuthLoginPost({
     LoginRequest? loginRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -244,7 +245,36 @@ class AuthApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    return _response;
+    LoginResponse? _responseData;
+
+    try {
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(LoginResponse),
+            ) as LoginResponse;
+    } catch (error, stackTrace) {
+      throw DioException(
+        requestOptions: _response.requestOptions,
+        response: _response,
+        type: DioExceptionType.unknown,
+        error: error,
+        stackTrace: stackTrace,
+      );
+    }
+
+    return Response<LoginResponse>(
+      data: _responseData,
+      headers: _response.headers,
+      isRedirect: _response.isRedirect,
+      requestOptions: _response.requestOptions,
+      redirects: _response.redirects,
+      statusCode: _response.statusCode,
+      statusMessage: _response.statusMessage,
+      extra: _response.extra,
+    );
   }
 
   /// apiV1AuthLogoutPost
@@ -334,9 +364,9 @@ class AuthApi {
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future]
+  /// Returns a [Future] containing a [Response] with a [LoginResponse] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<void>> apiV1AuthRefreshPost({
+  Future<Response<LoginResponse>> apiV1AuthRefreshPost({
     RefreshRequest? refreshRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -394,7 +424,36 @@ class AuthApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    return _response;
+    LoginResponse? _responseData;
+
+    try {
+      final rawResponse = _response.data;
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(LoginResponse),
+            ) as LoginResponse;
+    } catch (error, stackTrace) {
+      throw DioException(
+        requestOptions: _response.requestOptions,
+        response: _response,
+        type: DioExceptionType.unknown,
+        error: error,
+        stackTrace: stackTrace,
+      );
+    }
+
+    return Response<LoginResponse>(
+      data: _responseData,
+      headers: _response.headers,
+      isRedirect: _response.isRedirect,
+      requestOptions: _response.requestOptions,
+      redirects: _response.redirects,
+      statusCode: _response.statusCode,
+      statusMessage: _response.statusMessage,
+      extra: _response.extra,
+    );
   }
 
   /// apiV1AuthRegisterPost

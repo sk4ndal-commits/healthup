@@ -156,5 +156,35 @@
         "format": "decimalPattern"
       }
     }
-  }
+  },
+  "planConfirmationTitle": "Here’s your starting plan",
+  "planConfirmationSubtitle": "Based on what you told us, we’ve generated a sustainable health baseline for you.",
+  "sleepTargetLabel": "Sleep target window",
+  "workoutTargetLabel": "Weekly workout target",
+  "dailyBaselinesLabel": "Daily baselines",
+  "workoutCount": "{count} per week",
+  "@workoutCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gotItButton": "Got it, let’s go",
+  "todayTitle": "What matters today",
+  "todayModeLabel": "I am having a...",
+  "modeNormal": "Normal day",
+  "modeBusy": "Busy day",
+  "modeRecovery": "Recovery day",
+  "tierGood": "Good",
+  "tierBetter": "Better",
+  "tierBest": "Best",
+  "tierNone": "Not yet",
+  "planAreaMovement": "Movement",
+  "planAreaExercise": "Exercise",
+  "planAreaSleep": "Sleep",
+  "planAreaNutrition": "Nutrition",
+  "planAreaRecovery": "Recovery",
+  "noPlanFound": "No plan found. Please complete onboarding.",
+  "whatStillCounts": "What still counts"
 }

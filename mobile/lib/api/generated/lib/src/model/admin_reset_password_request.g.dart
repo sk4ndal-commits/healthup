@@ -10,15 +10,15 @@ class _$AdminResetPasswordRequest extends AdminResetPasswordRequest {
   @override
   final String? newPassword;
 
-  factory _$AdminResetPasswordRequest([
-    void Function(AdminResetPasswordRequestBuilder)? updates,
-  ]) => (AdminResetPasswordRequestBuilder()..update(updates))._build();
+  factory _$AdminResetPasswordRequest(
+          [void Function(AdminResetPasswordRequestBuilder)? updates]) =>
+      (AdminResetPasswordRequestBuilder()..update(updates))._build();
 
   _$AdminResetPasswordRequest._({this.newPassword}) : super._();
   @override
   AdminResetPasswordRequest rebuild(
-    void Function(AdminResetPasswordRequestBuilder) updates,
-  ) => (toBuilder()..update(updates)).build();
+          void Function(AdminResetPasswordRequestBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
 
   @override
   AdminResetPasswordRequestBuilder toBuilder() =>
@@ -41,9 +41,9 @@ class _$AdminResetPasswordRequest extends AdminResetPasswordRequest {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(
-      r'AdminResetPasswordRequest',
-    )..add('newPassword', newPassword)).toString();
+    return (newBuiltValueToStringHelper(r'AdminResetPasswordRequest')
+          ..add('newPassword', newPassword))
+        .toString();
   }
 }
 
@@ -83,8 +83,10 @@ class AdminResetPasswordRequestBuilder
   AdminResetPasswordRequest build() => _build();
 
   _$AdminResetPasswordRequest _build() {
-    final _$result =
-        _$v ?? _$AdminResetPasswordRequest._(newPassword: newPassword);
+    final _$result = _$v ??
+        _$AdminResetPasswordRequest._(
+          newPassword: newPassword,
+        );
     replace(_$result);
     return _$result;
   }

@@ -86,6 +86,7 @@ Class | Method | HTTP request | Description
  - [CreateUserRequest](doc/CreateUserRequest.md)
  - [ForgotPasswordRequest](doc/ForgotPasswordRequest.md)
  - [LoginRequest](doc/LoginRequest.md)
+ - [LoginResponse](doc/LoginResponse.md)
  - [RefreshRequest](doc/RefreshRequest.md)
  - [RegisterRequest](doc/RegisterRequest.md)
  - [ResetPasswordRequest](doc/ResetPasswordRequest.md)

@@ -99,9 +99,12 @@ class LoginRequestBuilder
   LoginRequest build() => _build();
 
   _$LoginRequest _build() {
-    final _$result =
-        _$v ??
-        _$LoginRequest._(email: email, password: password, deviceId: deviceId);
+    final _$result = _$v ??
+        _$LoginRequest._(
+          email: email,
+          password: password,
+          deviceId: deviceId,
+        );
     replace(_$result);
     return _$result;
   }

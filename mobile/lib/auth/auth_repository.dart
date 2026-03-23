@@ -12,16 +12,21 @@ class AuthRepository {
   AuthRepository(this._authApi, this._storage);
 
   Future<void> login(String email, String password) async {
-    await _authApi.apiV1AuthLoginPost(
+    final response = await _authApi.apiV1AuthLoginPost(
       loginRequest: LoginRequest((b) => b
         ..email = email
         ..password = password),
     );
 
-    // TODO: The generated API client currently returns Response<void>
-    // but the backend returns tokens. This needs fixing in the OpenAPI spec
-    // or generator config. For now, we assume tokens are handled via cookies
-    // or the spec needs to be updated to return a LoginResponse model.
+    final loginResponse = response.data;
+    if (loginResponse != null &&
+        loginResponse.accessToken != null &&
+        loginResponse.refreshToken != null) {
+      await _storage.saveTokens(
+        accessToken: loginResponse.accessToken!,
+        refreshToken: loginResponse.refreshToken!,
+      );
+    }
   }
 
   Future<void> register(String email, String password, String accountName) async {

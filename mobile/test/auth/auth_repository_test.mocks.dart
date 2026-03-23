@@ -8,12 +8,13 @@ import 'dart:async' as _i4;
 import 'package:api_client/src/api/auth_api.dart' as _i3;
 import 'package:api_client/src/model/change_password_request.dart' as _i5;
 import 'package:api_client/src/model/forgot_password_request.dart' as _i6;
-import 'package:api_client/src/model/login_request.dart' as _i7;
-import 'package:api_client/src/model/refresh_request.dart' as _i8;
-import 'package:api_client/src/model/register_request.dart' as _i9;
-import 'package:api_client/src/model/reset_password_request.dart' as _i10;
+import 'package:api_client/src/model/login_request.dart' as _i8;
+import 'package:api_client/src/model/login_response.dart' as _i7;
+import 'package:api_client/src/model/refresh_request.dart' as _i9;
+import 'package:api_client/src/model/register_request.dart' as _i10;
+import 'package:api_client/src/model/reset_password_request.dart' as _i11;
 import 'package:dio/dio.dart' as _i2;
-import 'package:mobile_app/core/services/secure_storage_service.dart' as _i11;
+import 'package:mobile_app/core/services/secure_storage_service.dart' as _i12;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -132,8 +133,8 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
       ) as _i4.Future<_i2.Response<void>>);
 
   @override
-  _i4.Future<_i2.Response<void>> apiV1AuthLoginPost({
-    _i7.LoginRequest? loginRequest,
+  _i4.Future<_i2.Response<_i7.LoginResponse>> apiV1AuthLoginPost({
+    _i8.LoginRequest? loginRequest,
     _i2.CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -155,7 +156,8 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
             #onReceiveProgress: onReceiveProgress,
           },
         ),
-        returnValue: _i4.Future<_i2.Response<void>>.value(_FakeResponse_0<void>(
+        returnValue: _i4.Future<_i2.Response<_i7.LoginResponse>>.value(
+            _FakeResponse_0<_i7.LoginResponse>(
           this,
           Invocation.method(
             #apiV1AuthLoginPost,
@@ -171,11 +173,11 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
             },
           ),
         )),
-      ) as _i4.Future<_i2.Response<void>>);
+      ) as _i4.Future<_i2.Response<_i7.LoginResponse>>);
 
   @override
   _i4.Future<_i2.Response<void>> apiV1AuthLogoutPost({
-    _i8.RefreshRequest? refreshRequest,
+    _i9.RefreshRequest? refreshRequest,
     _i2.CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -216,8 +218,8 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
       ) as _i4.Future<_i2.Response<void>>);
 
   @override
-  _i4.Future<_i2.Response<void>> apiV1AuthRefreshPost({
-    _i8.RefreshRequest? refreshRequest,
+  _i4.Future<_i2.Response<_i7.LoginResponse>> apiV1AuthRefreshPost({
+    _i9.RefreshRequest? refreshRequest,
     _i2.CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -239,7 +241,8 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
             #onReceiveProgress: onReceiveProgress,
           },
         ),
-        returnValue: _i4.Future<_i2.Response<void>>.value(_FakeResponse_0<void>(
+        returnValue: _i4.Future<_i2.Response<_i7.LoginResponse>>.value(
+            _FakeResponse_0<_i7.LoginResponse>(
           this,
           Invocation.method(
             #apiV1AuthRefreshPost,
@@ -255,11 +258,11 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
             },
           ),
         )),
-      ) as _i4.Future<_i2.Response<void>>);
+      ) as _i4.Future<_i2.Response<_i7.LoginResponse>>);
 
   @override
   _i4.Future<_i2.Response<void>> apiV1AuthRegisterPost({
-    _i9.RegisterRequest? registerRequest,
+    _i10.RegisterRequest? registerRequest,
     _i2.CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -301,7 +304,7 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
 
   @override
   _i4.Future<_i2.Response<void>> apiV1AuthResetPasswordPost({
-    _i10.ResetPasswordRequest? resetPasswordRequest,
+    _i11.ResetPasswordRequest? resetPasswordRequest,
     _i2.CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -346,7 +349,7 @@ class MockAuthApi extends _i1.Mock implements _i3.AuthApi {
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockSecureStorageService extends _i1.Mock
-    implements _i11.SecureStorageService {
+    implements _i12.SecureStorageService {
   MockSecureStorageService() {
     _i1.throwOnMissingStub(this);
   }

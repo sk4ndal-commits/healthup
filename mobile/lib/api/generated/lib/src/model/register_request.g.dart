@@ -18,7 +18,7 @@ class _$RegisterRequest extends RegisterRequest {
       (RegisterRequestBuilder()..update(updates))._build();
 
   _$RegisterRequest._({this.email, this.password, this.accountName})
-    : super._();
+      : super._();
   @override
   RegisterRequest rebuild(void Function(RegisterRequestBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -100,8 +100,7 @@ class RegisterRequestBuilder
   RegisterRequest build() => _build();
 
   _$RegisterRequest _build() {
-    final _$result =
-        _$v ??
+    final _$result = _$v ??
         _$RegisterRequest._(
           email: email,
           password: password,

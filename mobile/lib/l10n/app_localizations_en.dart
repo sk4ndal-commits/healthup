@@ -342,4 +342,76 @@ class AppLocalizationsEn extends AppLocalizations {
 
     return '$countString hours';
   }
+
+  @override
+  String get planConfirmationTitle => 'Here’s your starting plan';
+
+  @override
+  String get planConfirmationSubtitle =>
+      'Based on what you told us, we’ve generated a sustainable health baseline for you.';
+
+  @override
+  String get sleepTargetLabel => 'Sleep target window';
+
+  @override
+  String get workoutTargetLabel => 'Weekly workout target';
+
+  @override
+  String get dailyBaselinesLabel => 'Daily baselines';
+
+  @override
+  String workoutCount(int count) {
+    return '$count per week';
+  }
+
+  @override
+  String get gotItButton => 'Got it, let’s go';
+
+  @override
+  String get todayTitle => 'What matters today';
+
+  @override
+  String get todayModeLabel => 'I am having a...';
+
+  @override
+  String get modeNormal => 'Normal day';
+
+  @override
+  String get modeBusy => 'Busy day';
+
+  @override
+  String get modeRecovery => 'Recovery day';
+
+  @override
+  String get tierGood => 'Good';
+
+  @override
+  String get tierBetter => 'Better';
+
+  @override
+  String get tierBest => 'Best';
+
+  @override
+  String get tierNone => 'Not yet';
+
+  @override
+  String get planAreaMovement => 'Movement';
+
+  @override
+  String get planAreaExercise => 'Exercise';
+
+  @override
+  String get planAreaSleep => 'Sleep';
+
+  @override
+  String get planAreaNutrition => 'Nutrition';
+
+  @override
+  String get planAreaRecovery => 'Recovery';
+
+  @override
+  String get noPlanFound => 'No plan found. Please complete onboarding.';
+
+  @override
+  String get whatStillCounts => 'What still counts';
 }

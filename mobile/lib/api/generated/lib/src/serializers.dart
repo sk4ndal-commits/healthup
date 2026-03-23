@@ -19,6 +19,7 @@ import 'package:api_client/src/model/change_password_request.dart';
 import 'package:api_client/src/model/create_user_request.dart';
 import 'package:api_client/src/model/forgot_password_request.dart';
 import 'package:api_client/src/model/login_request.dart';
+import 'package:api_client/src/model/login_response.dart';
 import 'package:api_client/src/model/refresh_request.dart';
 import 'package:api_client/src/model/register_request.dart';
 import 'package:api_client/src/model/reset_password_request.dart';
@@ -31,6 +32,7 @@ part 'serializers.g.dart';
   CreateUserRequest,
   ForgotPasswordRequest,
   LoginRequest,
+  LoginResponse,
   RefreshRequest,
   RegisterRequest,
   ResetPasswordRequest,

@@ -167,7 +167,7 @@ Out of Scope
 ### EPIC F2 — Initial Plan Generation
 [CORE – First value moment]  
 
-[ ] US-F2.1 — Generate first weekly health plan  
+[x] US-F2.1 — Generate first weekly health plan  
 
 User Story  
 As a user, I want the app to create my first weekly plan automatically, so I don’t have to design a system from scratch.  
@@ -176,34 +176,34 @@ Actionable Prompt
 Implement rules-based weekly plan generation based on onboarding inputs.  
 
 Requirements
-  - [ ] Plan must include:
-    - [ ] sleep target window
-    - [ ] weekly workout target
-    - [ ] daily movement baseline
-    - [ ] one nutrition anchor
-    - [ ] one recovery anchor
-  - [ ] Use rules engine, not AI, for MVP
-  - [ ] Store generated plan locally
-  - [ ] Prepare API payload model for backend storage  
+  - [x] Plan must include:
+    - [x] sleep target window
+    - [x] weekly workout target
+    - [x] daily movement baseline
+    - [x] one nutrition anchor
+    - [x] one recovery anchor
+  - [x] Use rules engine, not AI, for MVP
+  - [x] Store generated plan locally
+  - [x] Prepare API payload model for backend storage  
 
 UI
-  - [ ] End of onboarding confirmation screen
-  - [ ] Show simple summary: “Here’s your starting plan”  
+  - [x] End of onboarding confirmation screen
+  - [x] Show simple summary: “Here’s your starting plan”  
 
 Deliver
-  - [ ] Plan entity / model
-  - [ ] Rules-based plan generator in Flutter domain layer or shared service layer
-  - [ ] First-week plan persistence  
+  - [x] Plan entity / model
+  - [x] Rules-based plan generator in Flutter domain layer or shared service layer
+  - [x] First-week plan persistence  
 
 Acceptance Criteria
-  - [ ] Every onboarded user gets a generated weekly plan
-  - [ ] Plan reflects availability and constraint inputs
-  - [ ] User can enter the Today screen immediately after generation  
+  - [x] Every onboarded user gets a generated weekly plan
+  - [x] Plan reflects availability and constraint inputs
+  - [x] User can enter the Today screen immediately after generation  
 
 Out of Scope
-  - [ ] Dynamic multi-week adaptation
-  - [ ] Coach-written plans
-  - [ ] Wearable-based auto-calibration
+  - [x] Dynamic multi-week adaptation
+  - [x] Coach-written plans
+  - [x] Wearable-based auto-calibration
 
 ### EPIC F3 — Today Screen & Daily Execution
 [CORE – Main daily product loop]  

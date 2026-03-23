@@ -4,6 +4,8 @@ import 'package:mobile_app/features/profile/domain/user_profile.dart';
 import 'package:mobile_app/features/profile/presentation/profile_notifier.dart';
 import 'package:mobile_app/l10n/app_localizations.dart';
 
+import 'package:mobile_app/auth/auth_notifier.dart';
+
 class ProfilePage extends ConsumerWidget {
   const ProfilePage({super.key});
 
@@ -18,6 +20,12 @@ class ProfilePage extends ConsumerWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFFF8F8F6),
         elevation: 0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () => ref.read(authNotifierProvider.notifier).logout(),
+          ),
+        ],
         title: Text(
           l10n.profileTitle,
           style: const TextStyle(

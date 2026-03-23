@@ -699,6 +699,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} hours'**
   String hoursCount(double count);
+
+  /// No description provided for @planConfirmationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Here’s your starting plan'**
+  String get planConfirmationTitle;
+
+  /// No description provided for @planConfirmationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on what you told us, we’ve generated a sustainable health baseline for you.'**
+  String get planConfirmationSubtitle;
+
+  /// No description provided for @sleepTargetLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep target window'**
+  String get sleepTargetLabel;
+
+  /// No description provided for @workoutTargetLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly workout target'**
+  String get workoutTargetLabel;
+
+  /// No description provided for @dailyBaselinesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily baselines'**
+  String get dailyBaselinesLabel;
+
+  /// No description provided for @workoutCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} per week'**
+  String workoutCount(int count);
+
+  /// No description provided for @gotItButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Got it, let’s go'**
+  String get gotItButton;
+
+  /// No description provided for @todayTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What matters today'**
+  String get todayTitle;
+
+  /// No description provided for @todayModeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'I am having a...'**
+  String get todayModeLabel;
+
+  /// No description provided for @modeNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal day'**
+  String get modeNormal;
+
+  /// No description provided for @modeBusy.
+  ///
+  /// In en, this message translates to:
+  /// **'Busy day'**
+  String get modeBusy;
+
+  /// No description provided for @modeRecovery.
+  ///
+  /// In en, this message translates to:
+  /// **'Recovery day'**
+  String get modeRecovery;
+
+  /// No description provided for @tierGood.
+  ///
+  /// In en, this message translates to:
+  /// **'Good'**
+  String get tierGood;
+
+  /// No description provided for @tierBetter.
+  ///
+  /// In en, this message translates to:
+  /// **'Better'**
+  String get tierBetter;
+
+  /// No description provided for @tierBest.
+  ///
+  /// In en, this message translates to:
+  /// **'Best'**
+  String get tierBest;
+
+  /// No description provided for @tierNone.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet'**
+  String get tierNone;
+
+  /// No description provided for @planAreaMovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Movement'**
+  String get planAreaMovement;
+
+  /// No description provided for @planAreaExercise.
+  ///
+  /// In en, this message translates to:
+  /// **'Exercise'**
+  String get planAreaExercise;
+
+  /// No description provided for @planAreaSleep.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep'**
+  String get planAreaSleep;
+
+  /// No description provided for @planAreaNutrition.
+  ///
+  /// In en, this message translates to:
+  /// **'Nutrition'**
+  String get planAreaNutrition;
+
+  /// No description provided for @planAreaRecovery.
+  ///
+  /// In en, this message translates to:
+  /// **'Recovery'**
+  String get planAreaRecovery;
+
+  /// No description provided for @noPlanFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No plan found. Please complete onboarding.'**
+  String get noPlanFound;
+
+  /// No description provided for @whatStillCounts.
+  ///
+  /// In en, this message translates to:
+  /// **'What still counts'**
+  String get whatStillCounts;
 }
 
 class _AppLocalizationsDelegate

@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 analysis_options.yaml
 doc/AdminApi.md
@@ -11,6 +10,7 @@ doc/CultureApi.md
 doc/ForgotPasswordRequest.md
 doc/HealthApi.md
 doc/LoginRequest.md
+doc/LoginResponse.md
 doc/RefreshRequest.md
 doc/RegisterRequest.md
 doc/ResetPasswordRequest.md
@@ -33,20 +33,9 @@ lib/src/model/create_user_request.dart
 lib/src/model/date.dart
 lib/src/model/forgot_password_request.dart
 lib/src/model/login_request.dart
+lib/src/model/login_response.dart
 lib/src/model/refresh_request.dart
 lib/src/model/register_request.dart
 lib/src/model/reset_password_request.dart
 lib/src/serializers.dart
 pubspec.yaml
-test/admin_api_test.dart
-test/admin_reset_password_request_test.dart
-test/auth_api_test.dart
-test/change_password_request_test.dart
-test/create_user_request_test.dart
-test/culture_api_test.dart
-test/forgot_password_request_test.dart
-test/health_api_test.dart
-test/login_request_test.dart
-test/refresh_request_test.dart
-test/register_request_test.dart
-test/reset_password_request_test.dart

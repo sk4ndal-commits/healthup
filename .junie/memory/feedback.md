@@ -150,3 +150,11 @@
     "NEW INSTRUCTION": "WHEN make test shows 'MSB1009: Project file does not exist' THEN update Makefile to only run existing test projects"
 }
 
+[2026-03-23 23:12] - Updated by Junie
+{
+    "TYPE": "correction",
+    "CATEGORY": "Login submission no redirect",
+    "EXPECTATION": "Logging in with valid credentials should authenticate and navigate away from the login page to the app dashboard/home.",
+    "NEW INSTRUCTION": "WHEN login form submits but page stays on login THEN check network/auth response and console errors, fix redirect handling"
+}
+

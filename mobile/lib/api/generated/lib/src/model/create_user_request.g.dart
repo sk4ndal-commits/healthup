@@ -16,12 +16,12 @@ class _$CreateUserRequest extends CreateUserRequest {
   @override
   final int? accountId;
 
-  factory _$CreateUserRequest([
-    void Function(CreateUserRequestBuilder)? updates,
-  ]) => (CreateUserRequestBuilder()..update(updates))._build();
+  factory _$CreateUserRequest(
+          [void Function(CreateUserRequestBuilder)? updates]) =>
+      (CreateUserRequestBuilder()..update(updates))._build();
 
   _$CreateUserRequest._({this.email, this.password, this.role, this.accountId})
-    : super._();
+      : super._();
   @override
   CreateUserRequest rebuild(void Function(CreateUserRequestBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -112,8 +112,7 @@ class CreateUserRequestBuilder
   CreateUserRequest build() => _build();
 
   _$CreateUserRequest _build() {
-    final _$result =
-        _$v ??
+    final _$result = _$v ??
         _$CreateUserRequest._(
           email: email,
           password: password,

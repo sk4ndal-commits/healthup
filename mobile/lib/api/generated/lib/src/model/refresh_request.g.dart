@@ -89,9 +89,11 @@ class RefreshRequestBuilder
   RefreshRequest build() => _build();
 
   _$RefreshRequest _build() {
-    final _$result =
-        _$v ??
-        _$RefreshRequest._(refreshToken: refreshToken, deviceId: deviceId);
+    final _$result = _$v ??
+        _$RefreshRequest._(
+          refreshToken: refreshToken,
+          deviceId: deviceId,
+        );
     replace(_$result);
     return _$result;
   }

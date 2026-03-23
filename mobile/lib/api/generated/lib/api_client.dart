@@ -20,6 +20,7 @@ export 'package:api_client/src/model/change_password_request.dart';
 export 'package:api_client/src/model/create_user_request.dart';
 export 'package:api_client/src/model/forgot_password_request.dart';
 export 'package:api_client/src/model/login_request.dart';
+export 'package:api_client/src/model/login_response.dart';
 export 'package:api_client/src/model/refresh_request.dart';
 export 'package:api_client/src/model/register_request.dart';
 export 'package:api_client/src/model/reset_password_request.dart';
