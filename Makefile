@@ -86,7 +86,6 @@ dev: docker-up ## Start DB via Docker, then set up ADB and show logs
 	-adb reverse tcp:8080 tcp:8080
 	-adb reverse tcp:8081 tcp:8081
 	@echo "All services are up. You can now run: cd $(MOBILE_DIR) && flutter run"
-	$(MAKE) docker-logs
 
 # ── Docker ────────────────────────────────────────────────────────────────────
 

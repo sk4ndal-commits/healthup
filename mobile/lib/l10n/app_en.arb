@@ -1,6 +1,118 @@
 {
-  "appTitle": "Mobile App",
+  "@@locale": "en",
+  "appTitle": "HealthUp",
   "@appTitle": {
     "description": "The title of the application"
+  },
+  "createProfileTitle": "Your profile",
+  "createProfileSubtitle": "Set up in under 1 minute. You can adjust this later.",
+  "nameFieldLabel": "What should we call you?",
+  "nameFieldHint": "First name or display name",
+  "nameFieldError": "Please enter your name.",
+  "primaryGoalLabel": "What matters most to you right now?",
+  "primaryGoalSubtitle": "Choose one.",
+  "availabilityLabel": "Weekly exercise availability",
+  "availabilitySubtitle": "Days per week you can realistically commit.",
+  "stabilityLabel": "How stable is your schedule?",
+  "stabilitySubtitle": "This helps us decide how flexible your plan needs to be.",
+  "derailersLabel": "What usually knocks you off track?",
+  "derailersSubtitle": "Select all that apply.",
+  "optionalSectionLabel": "Optional — helps personalise your plan",
+  "ageRangeLabel": "Age range",
+  "genderLabel": "Gender",
+  "workStyleLabel": "Work style",
+  "heightLabel": "Height (cm)",
+  "heightHint": "e.g. 175",
+  "weightLabel": "Weight (kg)",
+  "weightHint": "e.g. 72",
+  "workoutStyleLabel": "Preferred workout style",
+  "workoutStyleHint": "e.g. Strength, Yoga, Running, Quick HIIT…",
+  "notesLabel": "Anything else we should know?",
+  "notesHint": "e.g. I travel a lot, I have a bad knee…",
+  "continueButton": "Continue",
+  "errorSelectGoal": "Please select a primary goal.",
+  "errorSelectAvailability": "Please select your exercise availability.",
+  "errorSelectStability": "Please select your schedule stability.",
+  "errorSelectDerailer": "Please select at least one derailer.",
+
+  "goalEnergy": "Feel more energetic",
+  "goalEnergyDesc": "Focus on consistent sleep and metabolic health.",
+  "goalFitness": "Get fitter",
+  "goalFitnessDesc": "Improve strength, endurance, and overall capacity.",
+  "goalWeightLoss": "Lose weight",
+  "goalWeightLossDesc": "Support sustainable fat loss with nutrition and movement.",
+  "goalConsistency": "Build consistency",
+  "goalConsistencyDesc": "Focus on showing up every day, no matter what.",
+  "goalStressReduction": "Reduce stress",
+  "goalStressReductionDesc": "Use movement and recovery to manage high pressure.",
+
+  "availability0to2": "0–2 days",
+  "availability3to4": "3–4 days",
+  "availability5plus": "5+ days",
+
+  "stabilityStable": "Stable",
+  "stabilitySomewhatVariable": "Somewhat variable",
+  "stabilityHighlyVariable": "Highly variable",
+
+  "derailerStress": "Stress",
+  "derailerLowEnergy": "Low energy",
+  "derailerLackOfTime": "Lack of time",
+  "derailerPoorSleep": "Poor sleep",
+  "derailerTravel": "Travel",
+  "derailerEatingOut": "Eating out",
+  "derailerLowMotivation": "Low motivation",
+
+  "ageUnder25": "Under 25",
+  "age25to34": "25–34",
+  "age35to44": "35–44",
+  "age45to54": "45–54",
+  "age55plus": "55+",
+
+  "genderMale": "Male",
+  "genderFemale": "Female",
+  "genderNonBinary": "Non-binary",
+  "genderPreferNotToSay": "Prefer not to say",
+
+  "workStyleRemote": "Remote",
+  "workStyleHybrid": "Hybrid",
+  "workStyleOnSite": "On-site",
+
+  "profileTitle": "Profile",
+  "noProfileFound": "No profile found.",
+  "somethingWentWrong": "Something went wrong: {error}",
+  "@somethingWentWrong": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "rowLabelAgeRange": "Age range",
+  "rowLabelGender": "Gender",
+  "rowLabelWorkStyle": "Work style",
+  "rowLabelAvailability": "Availability",
+  "rowLabelStability": "Stability",
+  "rowLabelDerailers": "Derailers",
+  "rowLabelWorkoutStyle": "Workout style",
+  "rowLabelHeight": "Height",
+  "rowLabelWeight": "Weight",
+  "rowLabelNotes": "Notes",
+  "profileCreated": "Created {date}",
+  "@profileCreated": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "profileUpdated": "Last updated {date}",
+  "@profileUpdated": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
   }
 }

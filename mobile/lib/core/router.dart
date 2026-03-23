@@ -5,6 +5,9 @@ import 'package:mobile_app/features/auth/presentation/pages/forgot_password_page
 import 'package:mobile_app/features/auth/presentation/pages/login_page.dart';
 import 'package:mobile_app/features/auth/presentation/pages/register_page.dart';
 import 'package:mobile_app/features/home/presentation/home_page.dart';
+import 'package:mobile_app/features/profile/presentation/pages/create_profile_page.dart';
+import 'package:mobile_app/features/profile/presentation/pages/profile_page.dart';
+import 'package:mobile_app/features/profile/presentation/profile_notifier.dart';
 import 'package:mobile_app/features/todo/presentation/pages/todo_list_page.dart';
 
 part 'router.g.dart';
@@ -12,6 +15,7 @@ part 'router.g.dart';
 @riverpod
 GoRouter router(RouterRef ref) {
   final authState = ref.watch(authNotifierProvider);
+  final profileState = ref.watch(profileNotifierProvider);
 
   return GoRouter(
     initialLocation: '/',
@@ -28,6 +32,12 @@ GoRouter router(RouterRef ref) {
 
       if (status == AuthStatus.authenticated && isLoggingIn) {
         return '/';
+      }
+
+      // Redirect to profile creation if no profile exists yet
+      final isCreatingProfile = state.matchedLocation == '/profile/create';
+      if (!isCreatingProfile && profileState.hasValue && profileState.value == null) {
+        return '/profile/create';
       }
 
       return null;
@@ -52,6 +62,14 @@ GoRouter router(RouterRef ref) {
       GoRoute(
         path: '/todos',
         builder: (context, state) => const TodoListPage(),
+      ),
+      GoRoute(
+        path: '/profile',
+        builder: (context, state) => const ProfilePage(),
+      ),
+      GoRoute(
+        path: '/profile/create',
+        builder: (context, state) => const CreateProfilePage(),
       ),
     ],
   );

@@ -10,43 +10,43 @@ Actionable Prompt
 Implement a lightweight single-user profile creation flow as the root entity of the app.  
 
 Requirements
-  - [ ] Required fields:
-    - [ ] first name or display name
-    - [ ] primary goal (energy, fitness, weight loss, consistency, stress reduction)
-  - [ ] Optional fields:
-    - [ ] age range
-    - [ ] gender
-    - [ ] height
-    - [ ] weight
-    - [ ] work style (remote, hybrid, on-site)
-    - [ ] free-text notes
-  - [ ] Automatic generation of a unique user_id
-  - [ ] Local storage on device
-  - [ ] API-ready persistence model for sync with ASP.NET Web API / Postgres later
-  - [ ] App must work with exactly one active health profile per device in MVP  
+  - [x] Required fields:
+    - [x] first name or display name
+    - [x] primary goal (energy, fitness, weight loss, consistency, stress reduction)
+  - [x] Optional fields:
+    - [x] age range
+    - [x] gender
+    - [x] height
+    - [x] weight
+    - [x] work style (remote, hybrid, on-site)
+    - [x] free-text notes
+  - [x] Automatic generation of a unique user_id
+  - [x] Local storage on device
+  - [x] API-ready persistence model for sync with ASP.NET Web API / Postgres later
+  - [x] App must work with exactly one active health profile per device in MVP  
 
 UI
-  - [ ] Onboarding starts with “Your profile”
-  - [ ] Max 1 screen
-  - [ ] Fast completion focus: “Set up in under 1 minute”
-  - [ ] Copy must clearly state: “You can adjust this later”  
+  - [x] Onboarding starts with “Your profile”
+  - [x] Max 1 screen
+  - [x] Fast completion focus: “Set up in under 1 minute”
+  - [x] Copy must clearly state: “You can adjust this later”  
 
 Deliver
-  - [ ] User profile entity / model
-  - [ ] Create-profile flow in Flutter
-  - [ ] Persistent local storage
-  - [ ] Basic “Profile” screen  
+  - [x] User profile entity / model
+  - [x] Create-profile flow in Flutter
+  - [x] Persistent local storage
+  - [x] Basic “Profile” screen  
 
 Acceptance Criteria
-  - [ ] User can immediately continue to onboarding after profile creation
-  - [ ] No daily plan can exist without user_id
-  - [ ] App remains usable without mandatory login  
+  - [x] User can immediately continue to onboarding after profile creation
+  - [x] No daily plan can exist without user_id
+  - [x] App remains usable without mandatory login  
 
 Out of Scope
-  - [ ] Multi-user household accounts
-  - [ ] Full authentication stack
-  - [ ] Cloud sync
-  - [ ] Wearable identity merge
+  - [x] Multi-user household accounts
+  - [x] Full authentication stack
+  - [x] Cloud sync
+  - [x] Wearable identity merge
 
 ### EPIC F1 — Goal & Constraint Onboarding
 [FOUNDATION – Required to generate the first plan]  
@@ -60,32 +60,32 @@ Actionable Prompt
 Implement goal-selection onboarding as the first personalization step after profile creation.  
 
 Requirements
-  - [ ] User must choose exactly 1 primary goal:
-    - [ ] feel more energetic
-    - [ ] get fitter
-    - [ ] lose weight
-    - [ ] build consistency
-    - [ ] reduce stress
-  - [ ] Store selected goal in profile settings
-  - [ ] Goal must influence initial plan generation rules  
+  - [x] User must choose exactly 1 primary goal:
+    - [x] feel more energetic
+    - [x] get fitter
+    - [x] lose weight
+    - [x] build consistency
+    - [x] reduce stress
+  - [x] Store selected goal in profile settings
+  - [x] Goal must influence initial plan generation rules  
 
 UI
-  - [ ] Single-select card interface
-  - [ ] Clear, plain-language descriptions
-  - [ ] No medical or technical jargon  
+  - [x] Single-select card interface
+  - [x] Clear, plain-language descriptions
+  - [x] No medical or technical jargon  
 
 Deliver
-  - [ ] Goal selection screen
-  - [ ] Goal enum in domain model
-  - [ ] Persistence of selected goal  
+  - [x] Goal selection screen
+  - [x] Goal enum in domain model
+  - [x] Persistence of selected goal  
 
 Acceptance Criteria
-  - [ ] User cannot continue without selecting 1 primary goal
-  - [ ] Selected goal is shown later in Profile / Plan screens  
+  - [x] User cannot continue without selecting 1 primary goal
+  - [x] Selected goal is shown later in Profile / Plan screens  
 
 Out of Scope
-  - [ ] Multiple simultaneous primary goals
-  - [ ] AI-generated goal recommendations
+  - [x] Multiple simultaneous primary goals
+  - [x] AI-generated goal recommendations
 
 [ ] US-F1.2 — Weekly availability and constraints  
 
