@@ -1,0 +1,113 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "back": "Back"
+  },
+  "auth": {
+    "email": "Email address",
+    "password": "Password",
+    "login": {
+      "title": "Sign in to your account",
+      "email": "Email address",
+      "password": "Password",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "createOne": "Create one",
+      "error": "Invalid email or password",
+      "forgotPassword": "Forgot password?"
+    },
+    "register": {
+      "title": "Create your account",
+      "organisation": "Organisation name",
+      "email": "Email address",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Register",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "passwordMismatch": "Passwords do not match",
+      "error": "Registration failed. The email may already be in use or registration is disabled.",
+      "success": "Registration successful! Please sign in."
+    },
+    "logout": "Logout",
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "hint": "Enter your email and we'll send you a reset link.",
+      "submit": "Send reset link",
+      "success": "If that email exists, a reset link has been sent. Check your inbox.",
+      "error": "Something went wrong. Please try again.",
+      "backToLogin": "Back to sign in"
+    },
+    "resetPassword": {
+      "title": "Set new password",
+      "newPassword": "New password",
+      "submit": "Set new password",
+      "error": "Failed to reset password. The link may have expired.",
+      "invalidLink": "This reset link is invalid or incomplete.",
+      "requestNew": "Request a new reset link"
+    },
+    "changePassword": {
+      "title": "Change password",
+      "hint": "Update your account password",
+      "oldPassword": "Current password",
+      "newPassword": "New password",
+      "submit": "Change password",
+      "success": "Password changed successfully! Redirecting…",
+      "error": "Failed to change password. Check your current password and try again."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "role": "Role"
+  },
+  "todo": {
+    "title": "My Todos",
+    "add": "Add",
+    "newPlaceholder": "What needs to be done?",
+    "empty": "No todos yet. Add one above!",
+    "confirmDelete": "Delete this todo?",
+    "errorLoad": "Failed to load todos.",
+    "errorCreate": "Failed to create todo.",
+    "errorUpdate": "Failed to update todo.",
+    "errorDelete": "Failed to delete todo."
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "dashboardHint": "Manage users and accounts",
+    "users": "Users",
+    "createUser": "Create User",
+    "createUserTitle": "Create New User",
+    "accountId": "Account ID",
+    "colEmail": "Email",
+    "colRole": "Role",
+    "colAccount": "Account",
+    "colStatus": "Status",
+    "colCreated": "Created",
+    "colActions": "Actions",
+    "active": "Active",
+    "inactive": "Inactive",
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "resetPassword": "Reset Password",
+    "resetPasswordTitle": "Reset User Password",
+    "newPassword": "New Password",
+    "resetSuccess": "Password reset successfully.",
+    "noUsers": "No users found.",
+    "errorLoad": "Failed to load users.",
+    "errorToggle": "Failed to toggle user status.",
+    "errorReset": "Failed to reset password.",
+    "errorCreate": "Failed to create user."
+  },
+  "language": {
+    "switch": "Language",
+    "en": "English",
+    "de": "German"
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Audit Log" xml:space="preserve"><value>Audit-Protokoll</value></data>
+  <data name="From" xml:space="preserve"><value>Von</value></data>
+  <data name="To" xml:space="preserve"><value>Bis</value></data>
+  <data name="Actor Email" xml:space="preserve"><value>E-Mail des Akteurs</value></data>
+  <data name="Search email..." xml:space="preserve"><value>E-Mail suchen...</value></data>
+  <data name="Action" xml:space="preserve"><value>Aktion</value></data>
+  <data name="Action type..." xml:space="preserve"><value>Aktionstyp...</value></data>
+  <data name="Entity Type" xml:space="preserve"><value>Entitätstyp</value></data>
+  <data name="Entity type..." xml:space="preserve"><value>Entitätstyp...</value></data>
+  <data name="Filter" xml:space="preserve"><value>Filtern</value></data>
+  <data name="Timestamp (UTC)" xml:space="preserve"><value>Zeitstempel (UTC)</value></data>
+  <data name="Actor" xml:space="preserve"><value>Akteur</value></data>
+  <data name="Entity ID" xml:space="preserve"><value>Entitäts-ID</value></data>
+  <data name="Details" xml:space="preserve"><value>Details</value></data>
+  <data name="No audit logs found matching the criteria." xml:space="preserve"><value>Keine Audit-Protokolle gefunden, die den Kriterien entsprechen.</value></data>
+  <data name="View JSON" xml:space="preserve"><value>JSON anzeigen</value></data>
+</root>

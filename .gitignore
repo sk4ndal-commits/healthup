@@ -1,0 +1,155 @@
+########################################################
+# OS
+########################################################
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+
+########################################################
+# IDE / Editors
+########################################################
+
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+
+########################################################
+# Logs
+########################################################
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+########################################################
+# .NET / ASP.NET Core
+########################################################
+
+# Build results
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Rider
+.idea/
+
+# Publish output
+publish/
+
+# Dotnet tools
+.dotnet/
+
+########################################################
+# NuGet
+########################################################
+
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+########################################################
+# EF Core
+########################################################
+
+# Uncomment if you generate local SQLite files
+# *.db
+# *.db-shm
+# *.db-wal
+
+########################################################
+# Flutter / Dart
+########################################################
+
+.dart_tool/
+.packages
+# Allow committed monorepo packages (Flutter)
+!mobile/packages/
+!mobile/packages/**
+.pub-cache/
+.pub/
+build/
+
+# Flutter Generated
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+########################################################
+# Flutter iOS
+########################################################
+
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner.xcworkspace/
+
+########################################################
+# Flutter Android
+########################################################
+
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/
+
+########################################################
+# macOS Flutter
+########################################################
+
+macos/Pods/
+
+########################################################
+# Web (if ever added)
+########################################################
+
+node_modules/
+dist/
+coverage/
+
+########################################################
+# Docker
+########################################################
+
+*.pid
+*.seed
+*.pid.lock
+
+########################################################
+# Secrets / Environment
+########################################################
+
+.env
+.env.*
+appsettings.Local.json
+appsettings.*.local.json
+
+# If you ever store local dev secrets
+secrets.json
+
+########################################################
+# Temporary files
+########################################################
+
+*.tmp
+*.bak
+*.orig

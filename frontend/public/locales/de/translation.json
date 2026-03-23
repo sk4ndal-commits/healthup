@@ -1,0 +1,113 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "submit": "Absenden",
+    "back": "Zurück"
+  },
+  "auth": {
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "login": {
+      "title": "Anmelden",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "noAccount": "Noch kein Konto?",
+      "createOne": "Jetzt registrieren",
+      "error": "Ungültige E-Mail oder Passwort",
+      "forgotPassword": "Passwort vergessen?"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "organisation": "Organisationsname",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "submit": "Registrieren",
+      "alreadyHaveAccount": "Bereits ein Konto?",
+      "signIn": "Anmelden",
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "error": "Registrierung fehlgeschlagen. Die E-Mail wird möglicherweise bereits verwendet oder die Registrierung ist deaktiviert.",
+      "success": "Registrierung erfolgreich! Bitte melden Sie sich an."
+    },
+    "logout": "Abmelden",
+    "forgotPassword": {
+      "title": "Passwort vergessen?",
+      "hint": "Gib deine E-Mail ein und wir senden dir einen Reset-Link.",
+      "submit": "Reset-Link senden",
+      "success": "Falls diese E-Mail existiert, wurde ein Reset-Link gesendet. Bitte prüfe deinen Posteingang.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "backToLogin": "Zurück zur Anmeldung"
+    },
+    "resetPassword": {
+      "title": "Neues Passwort festlegen",
+      "newPassword": "Neues Passwort",
+      "submit": "Passwort festlegen",
+      "error": "Passwort zurücksetzen fehlgeschlagen. Der Link ist möglicherweise abgelaufen.",
+      "invalidLink": "Dieser Reset-Link ist ungültig oder unvollständig.",
+      "requestNew": "Neuen Reset-Link anfordern"
+    },
+    "changePassword": {
+      "title": "Passwort ändern",
+      "hint": "Kontopasswort aktualisieren",
+      "oldPassword": "Aktuelles Passwort",
+      "newPassword": "Neues Passwort",
+      "submit": "Passwort ändern",
+      "success": "Passwort erfolgreich geändert! Weiterleitung…",
+      "error": "Passwort ändern fehlgeschlagen. Überprüfe dein aktuelles Passwort und versuche es erneut."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Willkommen",
+    "role": "Rolle"
+  },
+  "todo": {
+    "title": "Meine Aufgaben",
+    "add": "Hinzufügen",
+    "newPlaceholder": "Was muss erledigt werden?",
+    "empty": "Noch keine Aufgaben. Füge eine hinzu!",
+    "confirmDelete": "Diese Aufgabe löschen?",
+    "errorLoad": "Aufgaben konnten nicht geladen werden.",
+    "errorCreate": "Aufgabe konnte nicht erstellt werden.",
+    "errorUpdate": "Aufgabe konnte nicht aktualisiert werden.",
+    "errorDelete": "Aufgabe konnte nicht gelöscht werden."
+  },
+  "admin": {
+    "title": "Admin-Bereich",
+    "dashboardHint": "Benutzer und Konten verwalten",
+    "users": "Benutzer",
+    "createUser": "Benutzer erstellen",
+    "createUserTitle": "Neuen Benutzer erstellen",
+    "accountId": "Konto-ID",
+    "colEmail": "E-Mail",
+    "colRole": "Rolle",
+    "colAccount": "Konto",
+    "colStatus": "Status",
+    "colCreated": "Erstellt",
+    "colActions": "Aktionen",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "activate": "Aktivieren",
+    "deactivate": "Deaktivieren",
+    "resetPassword": "Passwort zurücksetzen",
+    "resetPasswordTitle": "Benutzerpasswort zurücksetzen",
+    "newPassword": "Neues Passwort",
+    "resetSuccess": "Passwort erfolgreich zurückgesetzt.",
+    "noUsers": "Keine Benutzer gefunden.",
+    "errorLoad": "Benutzer konnten nicht geladen werden.",
+    "errorToggle": "Benutzerstatus konnte nicht geändert werden.",
+    "errorReset": "Passwort konnte nicht zurückgesetzt werden.",
+    "errorCreate": "Benutzer konnte nicht erstellt werden."
+  },
+  "language": {
+    "switch": "Sprache",
+    "en": "Englisch",
+    "de": "Deutsch"
+  }
+}

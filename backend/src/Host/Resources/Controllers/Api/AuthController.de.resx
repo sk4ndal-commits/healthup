@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Invalid email or password" xml:space="preserve"><value>Ungültige E-Mail oder Passwort</value></data>
+  <data name="Invalid or expired refresh token" xml:space="preserve"><value>Ungültiges oder abgelaufenes Refresh-Token</value></data>
+  <data name="Invalid old password or user not found" xml:space="preserve"><value>Ungültiges altes Passwort oder Benutzer nicht gefunden</value></data>
+</root>

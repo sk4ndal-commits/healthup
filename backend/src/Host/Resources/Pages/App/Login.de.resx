@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Log in" xml:space="preserve"><value>Anmelden</value></data>
+  <data name="Email" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="Password" xml:space="preserve"><value>Passwort</value></data>
+  <data name="Don't have an account?" xml:space="preserve"><value>Noch kein Konto?</value></data>
+  <data name="Register here" xml:space="preserve"><value>Hier registrieren</value></data>
+  <data name="Invalid login attempt." xml:space="preserve"><value>Ungültiger Anmeldeversuch.</value></data>
+  <data name="The Email field is required." xml:space="preserve"><value>Das Feld E-Mail ist erforderlich.</value></data>
+  <data name="The Email field is not a valid e-mail address." xml:space="preserve"><value>Das Feld E-Mail ist keine gültige E-Mail-Adresse.</value></data>
+  <data name="The Password field is required." xml:space="preserve"><value>Das Feld Passwort ist erforderlich.</value></data>
+</root>
