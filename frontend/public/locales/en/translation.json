@@ -67,17 +67,6 @@
     "welcome": "Welcome",
     "role": "Role"
   },
-  "todo": {
-    "title": "My Todos",
-    "add": "Add",
-    "newPlaceholder": "What needs to be done?",
-    "empty": "No todos yet. Add one above!",
-    "confirmDelete": "Delete this todo?",
-    "errorLoad": "Failed to load todos.",
-    "errorCreate": "Failed to create todo.",
-    "errorUpdate": "Failed to update todo.",
-    "errorDelete": "Failed to delete todo."
-  },
   "admin": {
     "title": "Admin Panel",
     "dashboardHint": "Manage users and accounts",

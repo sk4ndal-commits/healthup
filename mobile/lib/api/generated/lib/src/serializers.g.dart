@@ -15,9 +15,7 @@ Serializers _$serializers =
           ..add(LoginRequest.serializer)
           ..add(RefreshRequest.serializer)
           ..add(RegisterRequest.serializer)
-          ..add(ResetPasswordRequest.serializer)
-          ..add(TodoCreateRequest.serializer)
-          ..add(TodoUpdateRequest.serializer))
+          ..add(ResetPasswordRequest.serializer))
         .build();
 
 // ignore_for_file: deprecated_member_use_from_same_package,type=lint

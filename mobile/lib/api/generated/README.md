@@ -77,12 +77,6 @@ Class | Method | HTTP request | Description
 [*AuthApi*](doc/AuthApi.md) | [**apiV1AuthResetPasswordPost**](doc/AuthApi.md#apiv1authresetpasswordpost) | **POST** /api/v1/Auth/reset-password | 
 [*CultureApi*](doc/CultureApi.md) | [**cultureSetCulturePost**](doc/CultureApi.md#culturesetculturepost) | **POST** /Culture/SetCulture | 
 [*HealthApi*](doc/HealthApi.md) | [**apiV1HealthGet**](doc/HealthApi.md#apiv1healthget) | **GET** /api/v1/Health | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoGet**](doc/TodoApi.md#apiv1todoget) | **GET** /api/v1/Todo | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoIdDelete**](doc/TodoApi.md#apiv1todoiddelete) | **DELETE** /api/v1/Todo/{id} | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoIdGet**](doc/TodoApi.md#apiv1todoidget) | **GET** /api/v1/Todo/{id} | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoIdPut**](doc/TodoApi.md#apiv1todoidput) | **PUT** /api/v1/Todo/{id} | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoIdTogglePost**](doc/TodoApi.md#apiv1todoidtogglepost) | **POST** /api/v1/Todo/{id}/toggle | 
-[*TodoApi*](doc/TodoApi.md) | [**apiV1TodoPost**](doc/TodoApi.md#apiv1todopost) | **POST** /api/v1/Todo | 
 
 
 ## Documentation For Models
@@ -95,8 +89,6 @@ Class | Method | HTTP request | Description
  - [RefreshRequest](doc/RefreshRequest.md)
  - [RegisterRequest](doc/RegisterRequest.md)
  - [ResetPasswordRequest](doc/ResetPasswordRequest.md)
- - [TodoCreateRequest](doc/TodoCreateRequest.md)
- - [TodoUpdateRequest](doc/TodoUpdateRequest.md)
 
 
 ## Documentation For Authorization

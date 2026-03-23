@@ -8,7 +8,6 @@ import 'package:mobile_app/features/home/presentation/home_page.dart';
 import 'package:mobile_app/features/profile/presentation/pages/create_profile_page.dart';
 import 'package:mobile_app/features/profile/presentation/pages/profile_page.dart';
 import 'package:mobile_app/features/profile/presentation/profile_notifier.dart';
-import 'package:mobile_app/features/todo/presentation/pages/todo_list_page.dart';
 
 part 'router.g.dart';
 
@@ -58,10 +57,6 @@ GoRouter router(RouterRef ref) {
       GoRoute(
         path: '/forgot-password',
         builder: (context, state) => const ForgotPasswordPage(),
-      ),
-      GoRoute(
-        path: '/todos',
-        builder: (context, state) => const TodoListPage(),
       ),
       GoRoute(
         path: '/profile',

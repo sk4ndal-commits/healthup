@@ -7,5 +7,4 @@ public class Account
     public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
 
     public ICollection<User> Users { get; set; } = new List<User>();
-    public ICollection<TodoItem> TodoItems { get; set; } = new List<TodoItem>();
 }

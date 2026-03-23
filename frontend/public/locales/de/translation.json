@@ -67,17 +67,6 @@
     "welcome": "Willkommen",
     "role": "Rolle"
   },
-  "todo": {
-    "title": "Meine Aufgaben",
-    "add": "Hinzufügen",
-    "newPlaceholder": "Was muss erledigt werden?",
-    "empty": "Noch keine Aufgaben. Füge eine hinzu!",
-    "confirmDelete": "Diese Aufgabe löschen?",
-    "errorLoad": "Aufgaben konnten nicht geladen werden.",
-    "errorCreate": "Aufgabe konnte nicht erstellt werden.",
-    "errorUpdate": "Aufgabe konnte nicht aktualisiert werden.",
-    "errorDelete": "Aufgabe konnte nicht gelöscht werden."
-  },
   "admin": {
     "title": "Admin-Bereich",
     "dashboardHint": "Benutzer und Konten verwalten",

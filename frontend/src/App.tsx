@@ -4,7 +4,6 @@ import PrivateRoute from './components/PrivateRoute';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
-import TodoPage from './pages/TodoPage';
 import AdminPage from './pages/AdminPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import ResetPasswordPage from './pages/ResetPasswordPage';
@@ -24,14 +23,6 @@ function App() {
             element={
               <PrivateRoute>
                 <DashboardPage />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/todos"
-            element={
-              <PrivateRoute>
-                <TodoPage />
               </PrivateRoute>
             }
           />

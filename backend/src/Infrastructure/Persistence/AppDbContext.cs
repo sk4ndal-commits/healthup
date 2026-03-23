@@ -13,7 +13,6 @@ public class AppDbContext : DbContext
         _currentUserService = currentUserService;
     }
 
-    public DbSet<TodoItem> TodoItems => Set<TodoItem>();
     public DbSet<User> Users => Set<User>();
     public DbSet<Account> Accounts => Set<Account>();
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
@@ -79,18 +78,5 @@ public class AppDbContext : DbContext
             eb.HasQueryFilter(u => u.AccountId == (_currentUserService.AccountId ?? 0));
         });
 
-        modelBuilder.Entity<TodoItem>(eb =>
-        {
-            eb.HasKey(e => e.Id);
-            eb.Property(e => e.Title).IsRequired().HasMaxLength(200);
-            eb.Property(e => e.CreatedAt).IsRequired();
-
-            eb.HasOne(e => e.Account)
-                .WithMany(e => e.TodoItems)
-                .HasForeignKey(e => e.AccountId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            eb.HasQueryFilter(t => t.AccountId == (_currentUserService.AccountId ?? 0));
-        });
     }
 }

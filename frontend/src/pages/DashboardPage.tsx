@@ -33,13 +33,6 @@ export default function DashboardPage() {
         )}
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg">
           <Link
-            to="/todos"
-            className="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-5 py-4 text-white transition"
-          >
-            <div className="text-lg font-semibold">✅ {t('todo.title')}</div>
-            <div className="text-sm text-gray-400 mt-1">{t('todo.newPlaceholder')}</div>
-          </Link>
-          <Link
             to="/change-password"
             className="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-5 py-4 text-white transition"
           >

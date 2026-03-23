@@ -22,8 +22,6 @@ import 'package:api_client/src/model/login_request.dart';
 import 'package:api_client/src/model/refresh_request.dart';
 import 'package:api_client/src/model/register_request.dart';
 import 'package:api_client/src/model/reset_password_request.dart';
-import 'package:api_client/src/model/todo_create_request.dart';
-import 'package:api_client/src/model/todo_update_request.dart';
 
 part 'serializers.g.dart';
 
@@ -36,8 +34,6 @@ part 'serializers.g.dart';
   RefreshRequest,
   RegisterRequest,
   ResetPasswordRequest,
-  TodoCreateRequest,
-  TodoUpdateRequest,
 ])
 Serializers serializers = (_$serializers.toBuilder()
       ..add(const OneOfSerializer())

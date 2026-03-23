@@ -39,7 +39,6 @@ public static class ServiceCollectionExtensions
         services.AddScoped<Application.Interfaces.IAuthenticationService, AuthenticationService>();
         services.AddScoped<Application.Interfaces.IIdentityService, IdentityService>();
         services.AddScoped<IAuditService, AuditService>();
-        services.AddScoped<ITodoService, TodoService>();
 
         var smtpSettings = configuration.GetSection("SmtpSettings");
         if (smtpSettings.GetValue<bool>("UseMock", true))
@@ -64,12 +63,9 @@ public static class ServiceCollectionExtensions
         // Add the processing server as IHostedService
         services.AddHangfireServer();
 
-        // Register TodoReminderService as Scoped for Hangfire to use
-        services.AddScoped<TodoReminderService>();
-
         services.AddHostedService<RefreshTokenCleanupService>();
 
-        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Application.Todos.Handlers.GetAllTodosHandler).Assembly));
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Application.Auth.Handlers.LoginHandler).Assembly));
         services.AddValidatorsFromAssembly(typeof(Application.Auth.Validators.LoginCommandValidator).Assembly);
 
         // Register non-generic IStringLocalizer resolved via SharedResource marker

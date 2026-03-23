@@ -35,8 +35,8 @@ class HomePage extends ConsumerWidget {
               const Text('Successfully authenticated!'),
             const SizedBox(height: 32),
             ElevatedButton(
-              onPressed: () => context.push('/todos'),
-              child: const Text('Go to Todos'),
+              onPressed: () => context.push('/profile'),
+              child: const Text('Go to Profile'),
             ),
           ],
         ),

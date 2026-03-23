@@ -13,7 +13,6 @@ import 'package:api_client/src/api/admin_api.dart';
 import 'package:api_client/src/api/auth_api.dart';
 import 'package:api_client/src/api/culture_api.dart';
 import 'package:api_client/src/api/health_api.dart';
-import 'package:api_client/src/api/todo_api.dart';
 
 class ApiClient {
   static const String basePath = r'http://localhost';
@@ -102,11 +101,5 @@ class ApiClient {
   /// by doing that all interceptors will not be executed
   HealthApi getHealthApi() {
     return HealthApi(dio, serializers);
-  }
-
-  /// Get TodoApi instance, base route and serializer can be overridden by a given but be careful,
-  /// by doing that all interceptors will not be executed
-  TodoApi getTodoApi() {
-    return TodoApi(dio, serializers);
   }
 }

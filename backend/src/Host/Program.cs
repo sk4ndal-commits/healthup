@@ -64,11 +64,7 @@ app.UseHangfireDashboard("/admin/hangfire", new Hangfire.DashboardOptions
 // Schedule recurring jobs
 using (var scope = app.Services.CreateScope())
 {
-    var recurringJobManager = scope.ServiceProvider.GetRequiredService<IRecurringJobManager>();
-    recurringJobManager.AddOrUpdate<Infrastructure.Auth.TodoReminderService>(
-        "todo-reminders",
-        service => service.ProcessReminders(CancellationToken.None),
-        Cron.Hourly());
+    // Register recurring jobs here
 }
 
 app.UseSeedData();

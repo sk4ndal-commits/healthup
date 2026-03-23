@@ -13,7 +13,6 @@
   <data name="EmailAlreadyInUse" xml:space="preserve"><value>Diese E-Mail-Adresse wird bereits verwendet.</value></data>
   <data name="InvalidOrExpiredToken" xml:space="preserve"><value>Ungültiger oder abgelaufener Token.</value></data>
   <data name="PasswordChangeFailed" xml:space="preserve"><value>Passwortänderung fehlgeschlagen.</value></data>
-  <data name="TodoNotFound" xml:space="preserve"><value>Aufgabe nicht gefunden.</value></data>
 
   <!-- Validation: common -->
   <data name="FieldRequired" xml:space="preserve"><value>'{PropertyName}' ist erforderlich.</value></data>
