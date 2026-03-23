@@ -271,4 +271,75 @@ class AppLocalizationsEn extends AppLocalizations {
 
     return 'Last updated $dateString';
   }
+
+  @override
+  String get minWinTitle => 'Minimum win setup';
+
+  @override
+  String get minWinSubtitle => 'On a hard day, what still counts?';
+
+  @override
+  String get minMovementLabel => 'Movement (Steps)';
+
+  @override
+  String get minMovementSubtitle => 'Minimum steps to keep momentum.';
+
+  @override
+  String get minExerciseLabel => 'Exercise (Minutes)';
+
+  @override
+  String get minExerciseSubtitle => 'Minimum active time that counts.';
+
+  @override
+  String get minSleepLabel => 'Sleep (Hours)';
+
+  @override
+  String get minSleepSubtitle => 'Minimum rest to function.';
+
+  @override
+  String get minNutritionLabel => 'Nutrition Anchor';
+
+  @override
+  String get minNutritionSubtitle => 'One simple rule you can always keep.';
+
+  @override
+  String get minNutritionHint =>
+      'e.g. Drink 2L water, No sugar, High protein breakfast...';
+
+  @override
+  String get minWinPresetTitle => 'Use recommended presets';
+
+  @override
+  String get minWinPresetSubtitle => 'You can customise these anytime.';
+
+  @override
+  String get rowLabelMinMovement => 'Min Movement';
+
+  @override
+  String get rowLabelMinExercise => 'Min Exercise';
+
+  @override
+  String get rowLabelMinSleep => 'Min Sleep';
+
+  @override
+  String get rowLabelMinNutrition => 'Min Nutrition';
+
+  @override
+  String stepsCount(int count) {
+    return '$count steps';
+  }
+
+  @override
+  String minutesCount(int count) {
+    return '$count min';
+  }
+
+  @override
+  String hoursCount(double count) {
+    final intl.NumberFormat countNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countString hours';
+  }
 }

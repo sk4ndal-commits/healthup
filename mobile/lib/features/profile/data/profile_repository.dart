@@ -32,6 +32,10 @@ class ProfileRepository {
     ScheduleStability? scheduleStability,
     List<Derailer>? derailers,
     String? preferredWorkoutStyle,
+    int? minMovementSteps,
+    int? minExerciseMinutes,
+    double? minSleepHours,
+    String? minNutritionAnchor,
     String? notes,
   }) async {
     final now = DateTime.now();
@@ -48,6 +52,10 @@ class ProfileRepository {
       scheduleStability: scheduleStability,
       derailers: derailers,
       preferredWorkoutStyle: preferredWorkoutStyle,
+      minMovementSteps: minMovementSteps,
+      minExerciseMinutes: minExerciseMinutes,
+      minSleepHours: minSleepHours,
+      minNutritionAnchor: minNutritionAnchor,
       notes: notes,
       createdAt: now,
       updatedAt: now,

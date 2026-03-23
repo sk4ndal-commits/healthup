@@ -23,6 +23,10 @@ UserProfile _$UserProfileFromJson(Map<String, dynamic> json) => UserProfile(
           ?.map((e) => $enumDecode(_$DerailerEnumMap, e))
           .toList(),
       preferredWorkoutStyle: json['preferredWorkoutStyle'] as String?,
+      minMovementSteps: (json['minMovementSteps'] as num?)?.toInt(),
+      minExerciseMinutes: (json['minExerciseMinutes'] as num?)?.toInt(),
+      minSleepHours: (json['minSleepHours'] as num?)?.toDouble(),
+      minNutritionAnchor: json['minNutritionAnchor'] as String?,
       notes: json['notes'] as String?,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
@@ -45,6 +49,10 @@ Map<String, dynamic> _$UserProfileToJson(UserProfile instance) =>
       'derailers':
           instance.derailers?.map((e) => _$DerailerEnumMap[e]!).toList(),
       'preferredWorkoutStyle': instance.preferredWorkoutStyle,
+      'minMovementSteps': instance.minMovementSteps,
+      'minExerciseMinutes': instance.minExerciseMinutes,
+      'minSleepHours': instance.minSleepHours,
+      'minNutritionAnchor': instance.minNutritionAnchor,
       'notes': instance.notes,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),

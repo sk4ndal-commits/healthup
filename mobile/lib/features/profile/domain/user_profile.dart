@@ -97,6 +97,10 @@ class UserProfile {
   final ScheduleStability? scheduleStability;
   final List<Derailer>? derailers;
   final String? preferredWorkoutStyle;
+  final int? minMovementSteps;
+  final int? minExerciseMinutes;
+  final double? minSleepHours;
+  final String? minNutritionAnchor;
   final String? notes;
   final DateTime createdAt;
   final DateTime updatedAt;
@@ -114,6 +118,10 @@ class UserProfile {
     this.scheduleStability,
     this.derailers,
     this.preferredWorkoutStyle,
+    this.minMovementSteps,
+    this.minExerciseMinutes,
+    this.minSleepHours,
+    this.minNutritionAnchor,
     this.notes,
     required this.createdAt,
     required this.updatedAt,
@@ -136,6 +144,10 @@ class UserProfile {
     ScheduleStability? scheduleStability,
     List<Derailer>? derailers,
     String? preferredWorkoutStyle,
+    int? minMovementSteps,
+    int? minExerciseMinutes,
+    double? minSleepHours,
+    String? minNutritionAnchor,
     String? notes,
   }) {
     return UserProfile(
@@ -151,6 +163,10 @@ class UserProfile {
       scheduleStability: scheduleStability ?? this.scheduleStability,
       derailers: derailers ?? this.derailers,
       preferredWorkoutStyle: preferredWorkoutStyle ?? this.preferredWorkoutStyle,
+      minMovementSteps: minMovementSteps ?? this.minMovementSteps,
+      minExerciseMinutes: minExerciseMinutes ?? this.minExerciseMinutes,
+      minSleepHours: minSleepHours ?? this.minSleepHours,
+      minNutritionAnchor: minNutritionAnchor ?? this.minNutritionAnchor,
       notes: notes ?? this.notes,
       createdAt: createdAt,
       updatedAt: DateTime.now(),

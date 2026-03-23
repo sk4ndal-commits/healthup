@@ -114,5 +114,47 @@
         "format": "yMMMd"
       }
     }
+  },
+  "minWinTitle": "Minimum win setup",
+  "minWinSubtitle": "On a hard day, what still counts?",
+  "minMovementLabel": "Movement (Steps)",
+  "minMovementSubtitle": "Minimum steps to keep momentum.",
+  "minExerciseLabel": "Exercise (Minutes)",
+  "minExerciseSubtitle": "Minimum active time that counts.",
+  "minSleepLabel": "Sleep (Hours)",
+  "minSleepSubtitle": "Minimum rest to function.",
+  "minNutritionLabel": "Nutrition Anchor",
+  "minNutritionSubtitle": "One simple rule you can always keep.",
+  "minNutritionHint": "e.g. Drink 2L water, No sugar, High protein breakfast...",
+  "minWinPresetTitle": "Use recommended presets",
+  "minWinPresetSubtitle": "You can customise these anytime.",
+  "rowLabelMinMovement": "Min Movement",
+  "rowLabelMinExercise": "Min Exercise",
+  "rowLabelMinSleep": "Min Sleep",
+  "rowLabelMinNutrition": "Min Nutrition",
+  "stepsCount": "{count} steps",
+  "@stepsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "minutesCount": "{count} min",
+  "@minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "hoursCount": "{count} hours",
+  "@hoursCount": {
+    "placeholders": {
+      "count": {
+        "type": "double",
+        "format": "decimalPattern"
+      }
+    }
   }
 }

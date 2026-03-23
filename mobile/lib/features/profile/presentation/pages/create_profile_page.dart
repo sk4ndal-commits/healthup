@@ -20,6 +20,7 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
   final _heightController = TextEditingController();
   final _weightController = TextEditingController();
   final _workoutStyleController = TextEditingController();
+  final _nutritionAnchorController = TextEditingController();
 
   PrimaryGoal? _selectedGoal;
   AgeRange? _selectedAgeRange;
@@ -29,6 +30,11 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
   ScheduleStability? _selectedStability;
   final List<Derailer> _selectedDerailers = [];
 
+  // Min Win thresholds
+  double _minMovement = 3000;
+  double _minExercise = 10;
+  double _minSleep = 6;
+
   @override
   void dispose() {
     _nameController.dispose();
@@ -36,6 +42,7 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
     _heightController.dispose();
     _weightController.dispose();
     _workoutStyleController.dispose();
+    _nutritionAnchorController.dispose();
     super.dispose();
   }
 
@@ -72,6 +79,12 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
           preferredWorkoutStyle: _workoutStyleController.text.trim().isEmpty
               ? null
               : _workoutStyleController.text.trim(),
+          minMovementSteps: _minMovement.toInt(),
+          minExerciseMinutes: _minExercise.toInt(),
+          minSleepHours: _minSleep,
+          minNutritionAnchor: _nutritionAnchorController.text.trim().isEmpty
+              ? null
+              : _nutritionAnchorController.text.trim(),
           notes: _notesController.text.trim().isEmpty
               ? null
               : _notesController.text.trim(),
@@ -208,6 +221,99 @@ class _CreateProfilePageState extends ConsumerState<CreateProfilePage> {
                       _selectedDerailers.add(v);
                     }
                   }),
+                ),
+                const SizedBox(height: 32),
+
+                // Minimum Win Setup
+                Text(
+                  l10n.minWinTitle,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: const Color(0xFF1A1A1A),
+                      ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  l10n.minWinSubtitle,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: const Color(0xFF6B6B6B),
+                      ),
+                ),
+                const SizedBox(height: 24),
+
+                // Movement Min
+                _SectionLabel(label: l10n.minMovementLabel),
+                const SizedBox(height: 4),
+                Text(
+                  l10n.minMovementSubtitle,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: const Color(0xFF6B6B6B),
+                      ),
+                ),
+                Slider(
+                  value: _minMovement,
+                  min: 1000,
+                  max: 10000,
+                  divisions: 18,
+                  label: l10n.stepsCount(_minMovement.toInt()),
+                  activeColor: const Color(0xFF1A1A1A),
+                  onChanged: (v) => setState(() => _minMovement = v),
+                ),
+                const SizedBox(height: 16),
+
+                // Exercise Min
+                _SectionLabel(label: l10n.minExerciseLabel),
+                const SizedBox(height: 4),
+                Text(
+                  l10n.minExerciseSubtitle,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: const Color(0xFF6B6B6B),
+                      ),
+                ),
+                Slider(
+                  value: _minExercise,
+                  min: 5,
+                  max: 60,
+                  divisions: 11,
+                  label: l10n.minutesCount(_minExercise.toInt()),
+                  activeColor: const Color(0xFF1A1A1A),
+                  onChanged: (v) => setState(() => _minExercise = v),
+                ),
+                const SizedBox(height: 16),
+
+                // Sleep Min
+                _SectionLabel(label: l10n.minSleepLabel),
+                const SizedBox(height: 4),
+                Text(
+                  l10n.minSleepSubtitle,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: const Color(0xFF6B6B6B),
+                      ),
+                ),
+                Slider(
+                  value: _minSleep,
+                  min: 4,
+                  max: 9,
+                  divisions: 10,
+                  label: l10n.hoursCount(_minSleep),
+                  activeColor: const Color(0xFF1A1A1A),
+                  onChanged: (v) => setState(() => _minSleep = v),
+                ),
+                const SizedBox(height: 16),
+
+                // Nutrition Anchor
+                _SectionLabel(label: l10n.minNutritionLabel),
+                const SizedBox(height: 4),
+                Text(
+                  l10n.minNutritionSubtitle,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: const Color(0xFF6B6B6B),
+                      ),
+                ),
+                const SizedBox(height: 8),
+                TextFormField(
+                  controller: _nutritionAnchorController,
+                  decoration: _inputDecoration(l10n.minNutritionHint),
                 ),
                 const SizedBox(height: 32),
 

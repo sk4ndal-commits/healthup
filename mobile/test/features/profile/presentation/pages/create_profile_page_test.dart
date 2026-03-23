@@ -147,6 +147,10 @@ void main() {
       scheduleStability: ScheduleStability.stable,
       derailers: [Derailer.stress],
       preferredWorkoutStyle: anyNamed('preferredWorkoutStyle'),
+      minMovementSteps: anyNamed('minMovementSteps'),
+      minExerciseMinutes: anyNamed('minExerciseMinutes'),
+      minSleepHours: anyNamed('minSleepHours'),
+      minNutritionAnchor: anyNamed('minNutritionAnchor'),
       notes: anyNamed('notes'),
     )).called(1);
   });

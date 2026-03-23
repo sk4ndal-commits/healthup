@@ -579,6 +579,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Last updated {date}'**
   String profileUpdated(DateTime date);
+
+  /// No description provided for @minWinTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum win setup'**
+  String get minWinTitle;
+
+  /// No description provided for @minWinSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'On a hard day, what still counts?'**
+  String get minWinSubtitle;
+
+  /// No description provided for @minMovementLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Movement (Steps)'**
+  String get minMovementLabel;
+
+  /// No description provided for @minMovementSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum steps to keep momentum.'**
+  String get minMovementSubtitle;
+
+  /// No description provided for @minExerciseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Exercise (Minutes)'**
+  String get minExerciseLabel;
+
+  /// No description provided for @minExerciseSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum active time that counts.'**
+  String get minExerciseSubtitle;
+
+  /// No description provided for @minSleepLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep (Hours)'**
+  String get minSleepLabel;
+
+  /// No description provided for @minSleepSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Minimum rest to function.'**
+  String get minSleepSubtitle;
+
+  /// No description provided for @minNutritionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Nutrition Anchor'**
+  String get minNutritionLabel;
+
+  /// No description provided for @minNutritionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'One simple rule you can always keep.'**
+  String get minNutritionSubtitle;
+
+  /// No description provided for @minNutritionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Drink 2L water, No sugar, High protein breakfast...'**
+  String get minNutritionHint;
+
+  /// No description provided for @minWinPresetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use recommended presets'**
+  String get minWinPresetTitle;
+
+  /// No description provided for @minWinPresetSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You can customise these anytime.'**
+  String get minWinPresetSubtitle;
+
+  /// No description provided for @rowLabelMinMovement.
+  ///
+  /// In en, this message translates to:
+  /// **'Min Movement'**
+  String get rowLabelMinMovement;
+
+  /// No description provided for @rowLabelMinExercise.
+  ///
+  /// In en, this message translates to:
+  /// **'Min Exercise'**
+  String get rowLabelMinExercise;
+
+  /// No description provided for @rowLabelMinSleep.
+  ///
+  /// In en, this message translates to:
+  /// **'Min Sleep'**
+  String get rowLabelMinSleep;
+
+  /// No description provided for @rowLabelMinNutrition.
+  ///
+  /// In en, this message translates to:
+  /// **'Min Nutrition'**
+  String get rowLabelMinNutrition;
+
+  /// No description provided for @stepsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} steps'**
+  String stepsCount(int count);
+
+  /// No description provided for @minutesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} min'**
+  String minutesCount(int count);
+
+  /// No description provided for @hoursCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} hours'**
+  String hoursCount(double count);
 }
 
 class _AppLocalizationsDelegate

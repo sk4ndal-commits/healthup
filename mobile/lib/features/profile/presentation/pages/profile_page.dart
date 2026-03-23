@@ -133,6 +133,34 @@ class _ProfileContent extends StatelessWidget {
         ),
         const SizedBox(height: 12),
 
+        // Minimum Win thresholds
+        _Card(
+          children: [
+            if (profile.minMovementSteps != null)
+              _Row(
+                label: l10n.rowLabelMinMovement,
+                value: l10n.stepsCount(profile.minMovementSteps!),
+              ),
+            if (profile.minExerciseMinutes != null)
+              _Row(
+                label: l10n.rowLabelMinExercise,
+                value: l10n.minutesCount(profile.minExerciseMinutes!),
+              ),
+            if (profile.minSleepHours != null)
+              _Row(
+                label: l10n.rowLabelMinSleep,
+                value: l10n.hoursCount(profile.minSleepHours!),
+              ),
+            if (profile.minNutritionAnchor != null &&
+                profile.minNutritionAnchor!.isNotEmpty)
+              _Row(
+                label: l10n.rowLabelMinNutrition,
+                value: profile.minNutritionAnchor!,
+              ),
+          ],
+        ),
+        const SizedBox(height: 12),
+
         // Meta
         _Card(
           children: [

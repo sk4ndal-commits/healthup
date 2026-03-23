@@ -24,6 +24,10 @@ class ProfileNotifier extends _$ProfileNotifier {
     ScheduleStability? scheduleStability,
     List<Derailer>? derailers,
     String? preferredWorkoutStyle,
+    int? minMovementSteps,
+    int? minExerciseMinutes,
+    double? minSleepHours,
+    String? minNutritionAnchor,
     String? notes,
   }) async {
     state = const AsyncLoading();
@@ -41,6 +45,10 @@ class ProfileNotifier extends _$ProfileNotifier {
         scheduleStability: scheduleStability,
         derailers: derailers,
         preferredWorkoutStyle: preferredWorkoutStyle,
+        minMovementSteps: minMovementSteps,
+        minExerciseMinutes: minExerciseMinutes,
+        minSleepHours: minSleepHours,
+        minNutritionAnchor: minNutritionAnchor,
         notes: notes,
       );
     });

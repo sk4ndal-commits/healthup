@@ -96,41 +96,41 @@ Actionable Prompt
 Implement onboarding inputs for time availability, schedule volatility, and common barriers.  
 
 Requirements
-  - [ ] Required inputs:
-    - [ ] exercise availability per week (0–2 / 3–4 / 5+)
-    - [ ] schedule stability (stable / somewhat variable / highly variable)
-    - [ ] main derailers (multi-select):
-    - [ ] stress
-    - [ ] low energy
-    - [ ] lack of time
-    - [ ] poor sleep
-    - [ ] travel
-    - [ ] eating out
-    - [ ] low motivation
-  - [ ] Optional inputs:
-    - [ ] preferred workout style
-    - [ ] preferred walking goal style
-  - [ ] Results must be stored in onboarding settings
-  - [ ] Must feed initial plan generator  
+  - [x] Required inputs:
+    - [x] exercise availability per week (0–2 / 3–4 / 5+)
+    - [x] schedule stability (stable / somewhat variable / highly variable)
+    - [x] main derailers (multi-select):
+    - [x] stress
+    - [x] low energy
+    - [x] lack of time
+    - [x] poor sleep
+    - [x] travel
+    - [x] eating out
+    - [x] low motivation
+  - [x] Optional inputs:
+    - [x] preferred workout style
+    - [x] preferred walking goal style
+  - [x] Results must be stored in onboarding settings
+  - [x] Must feed initial plan generator  
 
 UI
-  - [ ] 2–3 short screens max
-  - [ ] Large buttons, no typing required
-  - [ ] Tone: practical and non-judgmental  
+  - [x] 2–3 short screens max
+  - [x] Large buttons, no typing required
+  - [x] Tone: practical and non-judgmental  
 
 Deliver
-  - [ ] Availability / constraint screens
-  - [ ] Constraint model
-  - [ ] Saved onboarding state  
+  - [x] Availability / constraint screens
+  - [x] Constraint model
+  - [x] Saved onboarding state  
 
 Acceptance Criteria
-  - [ ] User can complete onboarding in under 3 minutes total
-  - [ ] Inputs are available to the initial planning engine  
+  - [x] User can complete onboarding in under 3 minutes total
+  - [x] Inputs are available to the initial planning engine  
 
 Out of Scope
-  - [ ] Deep fitness assessment
-  - [ ] Clinical health intake
-  - [ ] Medical contraindication logic
+  - [x] Deep fitness assessment
+  - [x] Clinical health intake
+  - [x] Medical contraindication logic
 
 [ ] US-F1.3 — Minimum acceptable effort setup  
 
@@ -141,28 +141,28 @@ Actionable Prompt
 Implement onboarding for minimum viable effort thresholds across core health areas.  
 
 Requirements
-  - [ ] User defines or selects minimum acceptable level for:
-    - [ ] movement
-    - [ ] exercise
-    - [ ] sleep
-    - [ ] nutrition anchor
-  - [ ] Use presets if user skips customization
-  - [ ] Persist values as fallback defaults  
+  - [x] User defines or selects minimum acceptable level for:
+    - [x] movement
+    - [x] exercise
+    - [x] sleep
+    - [x] nutrition anchor
+  - [x] Use presets if user skips customization
+  - [x] Persist values as fallback defaults  
 
 UI
-  - [ ] Simple sliders or preset cards
-  - [ ] Copy example: “On a hard day, what still counts?”  
+  - [x] Simple sliders or preset cards
+  - [x] Copy example: “On a hard day, what still counts?”  
 
 Deliver
-  - [ ] Minimum effort setup screen
-  - [ ] Stored fallback baseline data  
+  - [x] Minimum effort setup screen
+  - [x] Stored fallback baseline data  
 
 Acceptance Criteria
-  - [ ] App can generate fallback plans immediately after onboarding  
+  - [x] App can generate fallback plans immediately after onboarding  
+  - [x] Defaults are editable later
 
-  - [ ] Defaults are editable later
 Out of Scope
-  - [ ] Fully personalized AI fallback logic
+  - [x] Fully personalized AI fallback logic
 
 ### EPIC F2 — Initial Plan Generation
 [CORE – First value moment]  
